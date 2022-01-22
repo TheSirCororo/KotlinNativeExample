@@ -1,0 +1,7 @@
+
+[libraries]
+
+# Gradle
+gradle-shadow = "com.github.johnrengelman.shadow:com.github.johnrengelman.shadow.gradle.plugin:7.0.0"
+gradle-kotlin-dsl = "org.gradle.kotlin.kotlin-dsl:org.gradle.kotlin.kotlin-dsl.gradle.plugin:2.1.6"
+gradle-plugin-kotlin = { module = "org.jetbrains.kotlin.jvm:org.jetbrains.kotlin.jvm.gradle.plugin" }

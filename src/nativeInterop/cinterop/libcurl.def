@@ -1,0 +1,7 @@
+headers = curl/curl.h
+headerFilter = curl/*
+
+compilerOpts.linux = -I./libcurl_linux/include
+linkerOpts.linux = -L/usr/lib64 -L/usr/lib/x86_64-linux-gnu -L./libcurl_linux -lcurl
+linkerOpts.mingw = -L./libcurl_win/lib -lcurl
+compilerOpts.mingw = -I./libcurl_win/include

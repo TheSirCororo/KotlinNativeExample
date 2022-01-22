@@ -1,5 +1,5 @@
 # KotlinNativeExample
-This is example for coding with Kotlin/Native, linking C libraries and comparsion java.net.* with libcurl
+This is example for coding with Kotlin/Native, linking C libraries and comparison java.net.* with libcurl
 
 ## Running
 ### Running mingw64 (Windows x64) target
@@ -20,7 +20,7 @@ binaries {
     }
 }
 ```
-3) Change `task?.args("https://example.org/")` to `task?.args("[YOUR CHEKING URL]")`
+3) Change `task?.args("https://example.org/")` to `task?.args("[YOUR CHECKING URL]")`
 4) Run
 ### Running JVM target
 1) Run `gradlew jvmJar`

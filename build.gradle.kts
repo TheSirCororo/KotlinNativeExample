@@ -59,6 +59,6 @@ val shadowJar = tasks.withType<com.github.jengelman.gradle.plugins.shadow.tasks.
     configurations = mutableListOf(runtimeClasspath)
 }
 
-tasks.build {
+tasks.getByName("jvmJar") {
     dependsOn(shadowJar)
 }

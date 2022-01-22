@@ -1,5 +1,5 @@
 # KotlinNativeExample
-This is example for Kotlin/Native and comparsion java.net.* with libcurl
+This is example for coding with Kotlin/Native, linking C libraries and comparsion java.net.* with libcurl
 
 ## Running
 ### Running mingw64 (Windows x64) target

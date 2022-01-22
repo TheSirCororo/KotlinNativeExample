@@ -4,10 +4,11 @@ import platform.posix.size_t
 import platform.posix.strcat
 
 actual data class WebPage(actual val link: String) {
-    var body: String? = null
+    actual var body: String? = null
         private set
-    var header: String? = null
+    actual var header: String? = null
         private set
+
     actual fun load(): Response = memScoped {
         val readBuffer = allocArray<ByteVar>(64 * 1024)
         val headerBuffer = allocArray<ByteVar>(16 * 1024)

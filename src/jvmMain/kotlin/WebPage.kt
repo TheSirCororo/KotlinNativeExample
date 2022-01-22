@@ -4,8 +4,10 @@ import java.net.http.HttpRequest
 import java.net.http.HttpResponse
 
 actual class WebPage(actual val link: String) {
-    var header: String? = null
-    var body: String? = null
+    actual var header: String? = null
+        private set
+    actual var body: String? = null
+        private set
 
     actual fun load(): Response {
         val client = HttpClient.newHttpClient()

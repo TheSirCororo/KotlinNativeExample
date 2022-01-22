@@ -14,7 +14,7 @@ actual class WebPage(actual val link: String) {
         val body = response.body()
         val headers = response.headers().map()
         this.body = body
-        this.header = headers.entries.joinToString { "${it.key}: ${it.value}" }
+        this.header = headers.entries.joinToString { "${it.key}: ${it.value}\n" }
         return Response(-1, header!!, body, response.statusCode(), HttpVersion.valueOf(response.version().name))
     }
 

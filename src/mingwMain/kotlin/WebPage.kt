@@ -17,6 +17,7 @@ actual data class WebPage(actual val link: String) {
         curl_easy_setopt(curl, CURLOPT_WRITEDATA, readBuffer)
         curl_easy_setopt(curl, CURLOPT_HEADERDATA, headerBuffer)
         curl_easy_setopt(curl, CURLOPT_HEADERFUNCTION, staticCFunction(::writeCallback))
+        curl_easy_setopt(curl, CURLOPT_HTTP_VERSION, CURL_HTTP_VERSION_2_0)
         curl_easy_setopt(curl, CURLOPT_USE_SSL, 1)
         curl_easy_setopt(curl, CURLOPT_CAINFO, "cacert.pem")
         val curlResponse = curl_easy_perform(curl)

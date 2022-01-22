@@ -9,7 +9,7 @@ actual class WebPage(actual val link: String) {
 
     actual fun load(): Response {
         val client = HttpClient.newHttpClient()
-        val request = HttpRequest.newBuilder().GET().uri(URI.create(link)).build()
+        val request = HttpRequest.newBuilder().GET().uri(URI.create(link)).version(HttpClient.Version.HTTP_2).build()
         val response = client.sendAsync(request, HttpResponse.BodyHandlers.ofString()).join()
         val body = response.body()
         val headers = response.headers().map()

@@ -25,7 +25,7 @@ binaries {
 ### Running JVM target
 1) Run `gradlew jvmJar`
 2) Go to `build/libs` directory
-3) Open terminal and run `java -jar KotlinNativeApp <url>`
+3) Open terminal and run `java -jar KotlinNativeApp-1.0-all.jar <url>`
 ## Used Libraries
 1) [libcurl for Windows](https://curl.se/windows/) for mingw and linux (to-do) target
 2) java.net.* for JVM target

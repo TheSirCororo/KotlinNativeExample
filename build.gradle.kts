@@ -1,6 +1,6 @@
 plugins {
-    kotlin("multiplatform") version "1.6.10"
-    id("com.github.johnrengelman.shadow") version "7.1.1"
+    kotlin("multiplatform") version "1.9.20"
+    id("com.github.johnrengelman.shadow") version "8.1.1"
     java
 }
 

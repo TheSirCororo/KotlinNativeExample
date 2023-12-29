@@ -1,8 +1,0 @@
-<component name="ArtifactManager">
-  <artifact type="jar" name="KotlinNativeApp-jvm-1.0">
-    <output-path>$PROJECT_DIR$/build/libs</output-path>
-    <root id="archive" name="KotlinNativeApp-jvm-1.0.jar">
-      <element id="module-output" name="KotlinNativeApp.jvmMain" />
-    </root>
-  </artifact>
-</component>

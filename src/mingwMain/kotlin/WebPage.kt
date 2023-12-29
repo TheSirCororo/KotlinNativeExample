@@ -1,3 +1,5 @@
+@file:OptIn(ExperimentalForeignApi::class)
+
 import curl.*
 import kotlinx.cinterop.*
 import platform.posix.size_t
@@ -9,6 +11,7 @@ actual data class WebPage(actual val link: String) {
     actual var header: String? = null
         private set
 
+    @OptIn(ExperimentalForeignApi::class)
     actual fun load(): Response = memScoped {
         val readBuffer = allocArray<ByteVar>(64 * 1024)
         val headerBuffer = allocArray<ByteVar>(16 * 1024)
